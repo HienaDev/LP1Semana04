@@ -7,9 +7,9 @@ namespace Lucas
         static void Main(string[] args)
         {
 
-            
+            int n = int.Parse(args[0]);
 
-            Console.WriteLine(Lucas(7));
+            Console.WriteLine(Lucas(n));
         }
 
         private static int Lucas(int n)
