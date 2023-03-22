@@ -32,12 +32,14 @@ namespace Power2Method
         /// <param name="n"> Interger to limit the power of 2</param>
         private static void PowerOf2UntilN(int n)
         {
-            for (int i = 1; i <= (1 << n); i <<= 1)
-            {
-                Console.WriteLine(i);
-            }
+            PowerOf2UntilN(0, n);
         }
 
+        /// <summary>
+        /// Displays all powers of 2 between n1 and n2.
+        /// </summary>
+        /// <param name="n1"> First power of 2 </param>
+        /// <param name="n2"> Last power of 2 </param>
         private static void PowerOf2UntilN(int n1, int n2)
         {
             for (int i = 1 << n1 ; i <= (1 << n2); i <<= 1)
