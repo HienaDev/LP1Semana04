@@ -12,6 +12,9 @@ namespace FamousQuotes
             Hasta();
         }
 
+        /// <summary>
+        /// Prints "Hasta la vista, baby."
+        /// </summary>
         private static void Hasta()
         {
             TheMoney();
@@ -19,11 +22,17 @@ namespace FamousQuotes
             MyPrecious();
         }
 
+        /// <summary>
+        /// Prints "Show me the money!"
+        /// </summary>
         private static void TheMoney()
         {
             Console.WriteLine("Show me the money!");
         }
 
+        /// <summary>
+        /// Prints "My precious."
+        /// </summary>
         private static void MyPrecious()
         {
             TheMoney();
