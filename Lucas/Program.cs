@@ -12,6 +12,11 @@ namespace Lucas
             Console.WriteLine(Lucas(n));
         }
 
+        /// <summary>
+        /// Displays the Lucas sequence until index n
+        /// </summary>
+        /// <param name="n"> Limit index </param>
+        /// <returns> Returns the number on n index </returns>
         private static int Lucas(int n)
         {
             if (n == 0)
