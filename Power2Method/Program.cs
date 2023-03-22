@@ -6,12 +6,16 @@ namespace Power2Method
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            PowerOf2Until5();
+            PowerOf2Until5();
         }
 
+        /// <summary>
+        /// Displays all powers of 2 until 5.
+        /// </summary>
         private static void PowerOf2Until5()
         {
-            for (int i = 1; i <= (1 << 5); i << 1)
+            for (int i = 1; i <= (1 << 5); i <<= 1)
             {
                 Console.WriteLine(i);
             }
