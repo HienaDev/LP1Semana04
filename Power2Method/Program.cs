@@ -7,7 +7,9 @@ namespace Power2Method
         static void Main(string[] args)
         {
             PowerOf2Until5();
-            PowerOf2Until5();
+            
+            PowerOf2UntilN(7);
+            PowerOf2UntilN(10);
         }
 
         /// <summary>
@@ -15,7 +17,16 @@ namespace Power2Method
         /// </summary>
         private static void PowerOf2Until5()
         {
-            for (int i = 1; i <= (1 << 5); i <<= 1)
+            PowerOf2UntilN(5);
+        }
+
+        /// <summary>
+        /// Displays all powers of 2 until n.
+        /// </summary>
+        /// <param name="n"> Interger to limit the power of 2</param>
+        private static void PowerOf2UntilN(int n)
+        {
+            for (int i = 1; i <= (1 << n); i <<= 1)
             {
                 Console.WriteLine(i);
             }
