@@ -4,6 +4,10 @@ namespace Lucas
 {
     class Program
     {
+        /// <summary>
+        /// Displays the Lucas sequence until index n
+        /// </summary>
+        /// <param name="args"> index 0: Limit index </param>
         static void Main(string[] args)
         {
 
@@ -21,8 +25,10 @@ namespace Lucas
         {
             if (n == 0)
                 return 2;
+
             else if (n == 1)
                 return 1;
+
             else
                 return (Lucas(n - 2) + Lucas(n - 1));
         }
